@@ -84,3 +84,13 @@ if uploaded_file:
                 
             except Exception as e:
                 st.error(f"Ối, rớt mạng hay gì gòi: {e} 😭")
+                # --- PHẦN BẢN QUYỀN VÀ LIÊN HỆ Ở DƯỚI CÙNG ---
+st.markdown("---") # Tạo một đường kẻ ngang phân cách
+st.markdown("""
+<div style="text-align: center; padding-top: 20px;">
+    <h4>🛠️ Công cụ được phát triển bởi [Thanh Huyền/Chicken-IT-beep]</h4>
+    <p>📞 <b>Zalo/Hotline:</b> <a href="tel:0867.373.822" style="text-decoration: none; color: #ff4b4b;">0867.373.822</a></p>
+    <p>📧 <b>Email liên hệ:</b> <a href="mailto:dangthanhkskt@gmail.com" style="text-decoration: none; color: #ff4b4b;">dangthanhkskt@gmail.com</a></p>
+    <p><i>🌟 "Luôn sẵn sàng hỗ trợ cả vũ trụ 24/7. Chúc mọi người làm việc hiệu quả!" 🌟</i></p>
+</div>
+""", unsafe_allow_html=True)
