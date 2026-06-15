@@ -65,8 +65,11 @@ if uploaded_file:
                     new_page.insert_image(new_page.rect, stream=processed_bytes)
                 
                 # Lưu file
+                # 🌟 BÍ KÍP NÉN DUNG LƯỢNG PDF 🌟
+                # garbage=4: Dọn sạch các rác hệ thống dư thừa trong quá trình tạo PDF
+                # deflate=True: Nén cấu trúc file lại như nén file ZIP
                 output_pdf = io.BytesIO()
-                output_doc.save(output_pdf)
+                output_doc.save(output_pdf, garbage=4, deflate=True)
                 output_doc.close()
                 doc.close()
                 
